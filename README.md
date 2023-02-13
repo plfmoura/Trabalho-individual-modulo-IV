@@ -1,6 +1,8 @@
 # Trabalho individual módulo IV
 Desenvolvendo um novo Banco de Dados para a Resilia Cursos.
 
+<img src="resiliaDatabase.png" width="80%"/>
+
 Perguntas a serem respondidas:
 
 ### I - Existem outras entidades além dessas três?
