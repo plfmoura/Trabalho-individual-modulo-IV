@@ -1,5 +1,5 @@
-# Trabalho-individual-modulo-IV
-Desenvolvendo um novo Banco de Dados para a Resilia Cursos
+# Trabalho individual módulo IV
+Desenvolvendo um novo Banco de Dados para a Resilia Cursos.
 
 Perguntas a serem respondidas:
 
@@ -8,17 +8,17 @@ Perguntas a serem respondidas:
 
 ### II - Quais são os principais campos e tipos?
 
-<strong>id</strong> - com o tipo INT e NN (Um inteiro de tamanho normal que não pode ser NULO)<br>
-<strong>name</strong> - com o tipo VARCHAR (Uma sequência de caracteres de texto de tamanho a ser definido)<br>
-<strong>email</strong> - com o tipo VARCHAR (Uma sequência de caracteres de texto de tamanho a ser definido)<br>
-<strong>cpf</strong> - com o tipo CHAR (Uma sequência de caracteres de texto de tamanho fixo)<br>
-<strong>enroll_date</strong> - com o tipo DATE (Responsável por armazenar uma hora ou data, neste caso de matrícula)<br>
-<strong>duration</strong> - com o timpo INT (Responsável por armazenar pequenos números inteiros, neste caso horas de curso totais)<br>
-<strong>opening</strong> e <strong>closure</strong> - com o tipo DATE (Armazenando dados de inicio e conclusão deste curso em questão)<br>
+<strong>id</strong> - _com o tipo INT e NN (Um inteiro de tamanho normal que não pode ser NULO)_<br>
+<strong>name</strong> - _com o tipo VARCHAR (Uma sequência de caracteres de texto de tamanho a ser definido)_<br>
+<strong>email</strong> - _com o tipo VARCHAR (Uma sequência de caracteres de texto de tamanho a ser definido)_<br>
+<strong>cpf</strong> - _com o tipo CHAR (Uma sequência de caracteres de texto de tamanho fixo)_<br>
+<strong>enroll_date</strong> - _com o tipo DATE (Responsável por armazenar uma hora ou data, neste caso de matrícula)_<br>
+<strong>duration</strong> - _com o timpo INT (Responsável por armazenar pequenos números inteiros, neste caso horas de curso totais)_<br>
+<strong>opening</strong> e <strong>closure</strong> - _com o tipo DATE (Armazenando dados de inicio e conclusão deste curso em questão)_<br>
 
 ### III - Como essas entidades estão relacionadas?
 
-- O pontapé inicial para esse diagrama de relações foi pelo objeto <strong>students</strong>, o mesmo possui: name, cpf, address, email, phone_number e photo.
+- O pontapé inicial para esse diagrama de relações foi pelo objeto <strong>students</strong>, o mesmo possui: name, cpf, address, email, phone_number e photo para diferenciarmos o cadastro destes estudantes, o maxímo de informações úteis, é preciso, para a criação deste perfil.
 
 - A partir disto criei a tabela de <strong>courses</strong>, recebendo entre students e a mesma a tabela de enrollment que simboliza a matricula, pois os alunos são matriculados na instituição de ensino e as matriculas vão para os cursos disponíveis. Ainda sobre disponibilidade, utilizamos <strong>availabillity</strong> recebendo dados BOOLEAN(TINYINT onde recebe 0 ou 1, false e true respectivamente) para saber se haverá disponibilidade para novas matrículas. 
 
